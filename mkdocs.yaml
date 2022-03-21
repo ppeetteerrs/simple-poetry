@@ -4,6 +4,8 @@ site_url: https://ppeetteerrs.github.io/simple-poetry
 
 repo_url: https://github.com/ppeetteerrs/simple-poetry
 
+edit_uri: ""
+
 theme:
     name: material
     font:
