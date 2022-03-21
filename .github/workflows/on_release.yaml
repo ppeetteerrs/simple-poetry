@@ -1,4 +1,4 @@
-name: upload
+name: on_release
 on:
   release:
     types: [created]

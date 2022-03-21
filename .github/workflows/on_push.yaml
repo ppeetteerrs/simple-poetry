@@ -1,4 +1,4 @@
-name: build
+name: on_push
 
 on:
   push:
