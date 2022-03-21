@@ -9,7 +9,7 @@ with suppress(Exception):
     __version__ = metadata.version("simple_poetry")
 
 
-def __test():
+def __test():  # pragma: no cover
     """
     Runs pytest locally and keeps only `coverage.xml` for GitHub Actions to upload to Codecov.
     """
@@ -19,7 +19,7 @@ def __test():
     )
 
 
-def __serve():
+def __serve():  # pragma: no cover
     """
     Serve local documentation.
     """
@@ -29,7 +29,7 @@ def __serve():
     )
 
 
-def __docs():
+def __docs():  # pragma: no cover
     """
     Build gh-pages documentation branch.
     """
