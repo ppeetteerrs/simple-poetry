@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "simple-poetry"
 version = "0.0.0"
-description = "A clean, automated setup for publishing simple Python packages to PyPI and Anaconda."
+description = "A clean, automated setup for publishing simple Python packages to PyPI using Poetry and GitHub Actions."
 authors = ["Peter Yuen <ppeetteerrsx@gmail.com>"]
 license = "MIT"
 readme = "README.md"
