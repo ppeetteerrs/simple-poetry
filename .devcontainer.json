@@ -5,7 +5,7 @@
 	},
 	"runArgs": [
 		"--name",
-		"simple-pypackage"
+		"simple-poetry"
 	],
 	"extensions": [
 		"ms-python.vscode-pylance",
@@ -17,7 +17,8 @@
 		"christian-kohler.path-intellisense",
 		"njpwerner.autodocstring",
 		"redhat.vscode-yaml",
-		"stackbreak.comment-divider"
+		"stackbreak.comment-divider",
+		"bungcip.better-toml"
 	],
 	"settings": {
 		"python.analysis.typeCheckingMode": "strict",

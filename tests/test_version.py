@@ -1,10 +1,10 @@
 import pytest
-import simple_pypackage
+import simple_poetry
 
 
 @pytest.fixture
 def version():
-    return simple_pypackage.__version__
+    return simple_poetry.__version__
 
 
 def test_version(version: str):

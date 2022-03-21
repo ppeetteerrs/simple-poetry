@@ -1,42 +1,69 @@
-site_name: simple-pypackage
+site_name: simple-poetry
 
-site_url: https://ppeetteerrs.github.io/simple-pypackage
+site_url: https://ppeetteerrs.github.io/simple-poetry
 
-repo_url: https://github.com/ppeetteerrs/simple-pypackage
+repo_url: https://github.com/ppeetteerrs/simple-poetry
 
 theme:
+    name: material
+    font:
+        code: Fira Code
     palette:
-        scheme: preference
-    name: gitbook
-    icon:
-        repo: fontawesome/brands/github
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: deep purple
+          toggle:
+              icon: material/weather-sunny
+              name: Switch to dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: deep purple
+          toggle:
+              icon: material/weather-night
+              name: Switch to light mode
     features:
+        - navigation.tabs
         - navigation.instant
-        - search.highlight
-        # - navigation.expand
-        # - navigation.tabs
-    custom_dir: "docs/overrides"
+        - navigation.expand
+        - toc.integrate
+        - search.suggest
 
 plugins:
-    - mkdocstrings
-    - git-revision-date
+    - search
+    - mkdocstrings:
+          watch: [simple_poetry]
+          default_handler: python
+          handlers:
+              python:
+                  rendering:
+                      show_root_heading: false
+                      show_root_toc_entry: false
+                      show_root_full_path: false
+                      separate_signature: true
+                      show_source: true
+                      show_if_no_docstring: true
+                      show_signature: true
+                      show_signature_annotations: true
+                      merge_init_into_class: true
+                      heading_level: 2
+                      show_submodules: false
+                      members_order: "alphabetical"
     - mkdocs-jupyter:
-          include_source: True
-          execute: True
+          include_source: true
+          execute: true
 
 markdown_extensions:
     - attr_list
     - pymdownx.superfences
     - pymdownx.highlight:
-          linenums: true
+          linenums: false
+    - pymdownx.emoji:
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
     - toc:
-          permalink: true
+          permalink: false
 
 nav:
     - Home: index.md
-    - Setup: setup.md
-    - Usage: usage.md
-    - FAQ: faq.md
-    - Report Issues: https://github.com/ppeetteerrs/simple-pypackage/issues
-    # - API Reference:
-    #       - simple_pypackage module: simple_pypackage.md
+    - API Reference: all.md
+    - Report Issues: https://github.com/ppeetteerrs/torch-conv-gradfix/issues

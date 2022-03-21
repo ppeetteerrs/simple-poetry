@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "simple-poetry"
+version = "0.0.0"
+description = "A clean, automated setup for publishing simple Python packages to PyPI and Anaconda."
+authors = ["Peter Yuen <ppeetteerrsx@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/ppeetteerrs/simple-poetry"
+repository = "https://github.com/ppeetteerrs/simple-poetry"
+documentation = "https://ppeetteerrs.github.io/simple-poetry"
+keywords = []
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.1"
+pytest-cov = "^3.0.0"
+mkdocs-material = "^8.2.5"
+mkdocs-jupyter = "^0.20.1"
+ipykernel = "^6.9.2"
+mkdocstrings-python = "^0.6.6"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+style = "semver"
+
+[tool.poetry.scripts]
+test = "simple_poetry:__test"
+serve = "simple_poetry:__serve"
+docs = "simple_poetry:__docs"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry.core.masonry.api"

@@ -2,12 +2,10 @@
 
 **A clean, automated setup for publishing simple Python packages to PyPI and Anaconda.**
 
-![action](https://img.shields.io/github/workflow/status/ppeetteerrs/simple-pypackage/build?logo=githubactions&logoColor=white)
-[![pypi](https://img.shields.io/pypi/v/simple-pypackage.svg)](https://pypi.python.org/pypi/simple-pypackage)
-[![anaconda](https://img.shields.io/conda/vn/ppeetteerrs/simple-pypackage?logo=anaconda)](https://anaconda.org/ppeetteerrs/simple-pypackage)
-![platform](https://img.shields.io/conda/pn/ppeetteerrs/simple-pypackage?label=platform&color=blueviolet)
-[![codecov](https://img.shields.io/codecov/c/github/ppeetteerrs/simple-pypackage?label=codecov&logo=codecov)](https://app.codecov.io/gh/ppeetteerrs/simple-pypackage)
-[![docs](https://img.shields.io/github/deployments/ppeetteerrs/simple-pypackage/github-pages?label=docs&logo=readthedocs)](https://ppeetteerrs.github.io/simple-pypackage)
+![action](https://img.shields.io/github/workflow/status/ppeetteerrs/simple-poetry/build?logo=githubactions&logoColor=white)
+[![pypi](https://img.shields.io/pypi/v/simple-poetry.svg)](https://pypi.python.org/pypi/simple-poetry)
+[![codecov](https://img.shields.io/codecov/c/github/ppeetteerrs/simple-poetry?label=codecov&logo=codecov)](https://app.codecov.io/gh/ppeetteerrs/simple-poetry)
+[![docs](https://img.shields.io/github/deployments/ppeetteerrs/simple-poetry/github-pages?label=docs&logo=readthedocs)](https://ppeetteerrs.github.io/simple-poetry)
 
 # Setup
 
@@ -20,8 +18,8 @@
 3. **After first release**: Go to `Settings` and activate your GitHub Pages using the `gh-pages` branch
 
 ## Edit Files
-- Rename `simple_pypackage` folder to your package name
-- Replace all `simple-pypackage`, `simple_pypackage`, `ppeetteerrs` and `Peter Yuen` with your package name, package slug, username and author name in these files:
+- Rename `simple_poetry` folder to your package name
+- Replace all `simple-poetry`, `simple_poetry`, `ppeetteerrs` and `Peter Yuen` with your package name, package slug, username and author name in these files:
 	- `.devcontainer.json`
 	- `mkdocs.yaml`
 	- `README.md`

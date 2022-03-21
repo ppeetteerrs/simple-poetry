@@ -1,9 +1,6 @@
-FROM ppeetteerrs/python:latest
+FROM ghcr.io/ppeetteerrs/python:3.8
 
-COPY requirements.txt /tmp/
-RUN pip install --requirement /tmp/requirements.txt
-
-COPY requirements_dev.txt /tmp/
-RUN pip install --requirement /tmp/requirements_dev.txt
+RUN pip install poetry poetry-dynamic-versioning && \
+	poetry install
 
 CMD ["zsh"]

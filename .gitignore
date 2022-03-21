@@ -110,3 +110,6 @@ osx-64
 linux-64
 noarch
 channeldata.json
+
+poetry.lock
+docs/index.md
