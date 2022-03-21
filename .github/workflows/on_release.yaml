@@ -25,7 +25,7 @@ jobs:
           pip install --no-cache-dir Cython
           pip install poetry poetry-dynamic-versioning
           poetry install
-          poetry publish --dry-run --build
+          poetry publish --build
   docs:
     runs-on: ubuntu-latest
 
