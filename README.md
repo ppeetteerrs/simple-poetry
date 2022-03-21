@@ -15,26 +15,25 @@
 		- `PYPI_TOKEN`: PyPI API token
 
 2. Replace text in files
-	-  Rename `simple_poetry` folder to `<package_name>`
-	-  Replace all `simple_poetry` instance in files to `<package_name>`
-	-  Replace all `simple-poetry` instance in files to `<package-name>`
-	-  Replace all `3.8` instance in files to `<target-python-version>`
-	-  Replace `ppeetteerrs` with `<github_user_name`>
+	- Rename `simple_poetry` folder to `<package_name>`
+	- Replace all `simple_poetry` instance in files to `<package_name>`
+	- Replace all `simple-poetry` instance in files to `<package-name>`
+	- Replace all `3.8` instance in files to `<target-python-version>`
+	- Replace `ppeetteerrs` with `<github_user_name`>
 
 3. Enter Package Information
-   - `pyproject.toml`: Project description, authors
-   - `<package_name>/__init__.py`: Author and email
-   - `README.md`: Customize it, change the name and description especially
-
+	- `pyproject.toml`: Project description, authors
+	- `<package_name>/__init__.py`: Author and email
+	- `README.md`: Customize it, change the name and description especially
 
 4. Further Customizations
-   - `mkdocs.yaml`: Edit theme and `mkdocstrings` preferences (Can also add sub-pages to API Reference etc.)
-   - `.devcontainer.json`: Add preferred extensions / build configurations (e.g. use GPUs)
-   - `Dockerfile`: Install necessary formatters / linters / packages for local testing
-   - `docs/`: Write your documentation
-   - `.github/workflows/push.yaml`: Remove the `tests::Run Tests` step if you need to run tests locally (e.g. if your tests require GPU). Keep the rest to upload Codecov.
+	- `mkdocs.yaml`: Edit theme and `mkdocstrings` preferences (Can also add sub-pages to API Reference etc.)
+	- `.devcontainer.json`: Add preferred extensions / build configurations (e.g. use GPUs)
+	- `Dockerfile`: Install necessary formatters / linters / packages for local testing
+	- `docs/`: Write your documentation
+	- `.github/workflows/push.yaml`: Remove the `tests::Run Tests` step if you need to run tests locally (e.g. if your tests require GPU). Keep the rest to upload Codecov.
 
 5. Publish and Setup GitHub Pages
-   - `commit` and `push` your changes
-   - Create first release
-   - Go to `Settings` and activate your GitHub Pages using the `gh-pages` branch
+	- `commit` and `push` your changes
+	- Create first release
+	- Go to `Settings` and activate your GitHub Pages using the `gh-pages` branch
