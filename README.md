@@ -32,6 +32,7 @@
 	- `Dockerfile`: Install necessary formatters / linters / packages for local testing
 	- `docs/`: Write your documentation
 	- `.github/workflows/push.yaml`: Remove the `tests::Run Tests` step if you need to run tests locally (e.g. if your tests require GPU). Keep the rest to upload Codecov.
+	- `.gitignore`: Remove `coverage.xml` if you need to run tests locally.
 
 5. Publish and Setup GitHub Pages
 	- `commit` and `push` your changes
