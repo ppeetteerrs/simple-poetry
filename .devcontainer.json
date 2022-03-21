@@ -3,6 +3,7 @@
 		"dockerfile": "Dockerfile",
 		"context": "."
 	},
+	"postCreateCommand": "poetry install",
 	"runArgs": [
 		"--name",
 		"simple-poetry"
